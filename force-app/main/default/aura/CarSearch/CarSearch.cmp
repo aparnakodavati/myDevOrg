@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:handler name="searchFormSubmit" event="c:SearchFormSubmit" action="{!c.doFormSubmit}" />
+<lightning:card title="Search Your Car" class="bottm_margin">
+    
+    <c:CarSearchForm777 />
+    </lightning:card>
+
+
+</aura:component>

@@ -1,0 +1,35 @@
+<!--
+  @File Name          : conditionalRenderingeExample.html
+  @Description        : 
+  @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Group              : 
+  @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Last Modified On   : 10/16/2019, 3:30:11 PM
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    10/16/2019   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
+-->
+<template>
+    <lightning-input type="checkbox" label="Show Div" onchange={showDivHandler}></lightning-input>
+ 
+ <template if:true={displayDiv}>
+        <div>I am here</div>   
+ </template>
+ 
+
+ <template for:each={cityList} for:item="city">
+<p key={city}>
+{city}
+</p>
+
+ </template>
+ 
+
+ <h1>Below is an example of iterator directive</h1>
+<template iterator:it={cityList}>
+<p key={it.value}>{it.value}</p>
+
+</template>
+
+
+</template>

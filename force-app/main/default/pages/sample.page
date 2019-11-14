@@ -1,0 +1,68 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  
+  
+  <apex:toolbar id="theToolbar">
+  
+  
+  <apex:outputText value="sample toolbar">  </apex:outputText>
+  
+  
+  <apex:toolbarGroup itemSeparator="line"  id="theToolbarlinks">
+  <apex:outputLink value="https://www.salesforce.com/"> Salesforce</apex:outputLink>
+    <apex:outputLink value="https://www.salesforce.com/"> Salesforce1234</apex:outputLink>
+
+</apex:toolbarGroup>
+
+ 
+  <apex:toolbarGroup itemSeparator="line" location="right" id="theToolbarRight">
+  
+  <apex:form >
+  <apex:inputText id="formText" label="Enter name">Enter Name </apex:inputText>
+  <apex:commandButton value="save"/>
+  
+  </apex:form>
+  
+  </apex:toolbarGroup>
+  </apex:toolbar>
+  
+  
+  
+  
+  <apex:form >
+  <apex:pageBlock title="First Block">
+  <apex:pageBlockSection title="First section">
+  
+  <apex:inputTextarea />
+  
+  </apex:pageBlockSection>
+  
+  
+  
+  <apex:pageBlockButtons >
+  <apex:commandButton value="Save"/>
+
+  <apex:commandButton value="Cancel"/>
+  </apex:pageBlockButtons>/>
+  </apex:pageBlock>
+  
+  </apex:form>
+  
+  
+  
+  
+  <apex:pageBlock title="second Block">
+  <apex:pageBlockSection title="First section">
+  
+  
+  </apex:pageBlockSection>
+  
+  
+  </apex:pageBlock>
+  
+  
+  <apex:pagemessage summary="validation errror message" severity="confirm" strength="2"></apex:pagemessage>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

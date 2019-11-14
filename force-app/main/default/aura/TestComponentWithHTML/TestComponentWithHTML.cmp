@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<p class="paragraph"> This is a paragraph text</p>
+    <div>
+    	<p class="paragraph1"> This is a paragraph text inside div</p>
+
+    </div>
+    <div>
+        <div>
+    	<p class="paragraph2"> This is a paragraph text indside nested div </p>
+</div>
+    </div>
+    
+    
+    
+    <!-- Neutral variant (default) -->
+    <lightning:button variant="success" label= "success Button"/>
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning:button variant="brand" label="Lightning Button"  />
+
+    <lightning:button variant="destructive" label="Destructive" title="Destructive action" onclick="{! c.handleClick }"/>
+
+    <button class="slds-button slds-button_neutral">Button</button>
+</aura:component>

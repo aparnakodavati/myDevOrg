@@ -1,0 +1,31 @@
+<aura:component implements="flexipage:availableForAllPageTypes"  access="global" >
+	
+  <div class="white">
+    Hello, HTML!
+  </div>
+  
+  <h2>Check out the style in this list.</h2>
+  
+  <ul>
+    <li class="red">I'm red.</li>
+    <li class="blue">I'm blue.</li>
+    <li class="green">I'm green.</li>
+  </ul>
+<p>Meher baba ki jai </p>
+    
+    
+     <ltng:require  styles= "/resource/Bootsrap"/>
+    
+    <div class="myBootstrap">
+    Hello, there!
+    </div>
+    
+    
+    <aura:attribute name="num1" type="Integer" default="1"/>
+    <aura:attribute name="num2" type="Integer" default="2"/>
+    <aura:attribute name="sum" type="Integer"/>
+    {!v.num1} + {!v.num2} = {!v.sum}
+
+    <!--Press button to add numbers and display sum-->
+    <ui:button label="Add Numbers" press="{!c.add}"/>
+</aura:component>
