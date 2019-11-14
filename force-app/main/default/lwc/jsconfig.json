@@ -3,20 +3,23 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/helloWorld": [
-                "helloWorld/helloWorld.js"
-            ],
-            "c/simpleCalculator": [
-                "simpleCalculator/simpleCalculator.js"
+            "c/bmiCalculator": [
+                "bmiCalculator/bmiCalculator.js"
             ],
             "c/conditionalRenderingeExample": [
                 "conditionalRenderingeExample/conditionalRenderingeExample.js"
             ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
             "c/helloWorld2": [
                 "helloWorld2/helloWorld2.js"
             ],
-            "c/bmiCalculator": [
-                "bmiCalculator/bmiCalculator.js"
+            "c/simpleCalculator": [
+                "simpleCalculator/simpleCalculator.js"
+            ],
+            "c/Leaflet": [
+                "../staticresources/Leaflet/Leaflet.js"
             ]
         }
     },
